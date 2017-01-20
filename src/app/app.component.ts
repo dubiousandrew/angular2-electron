@@ -1,6 +1,4 @@
 import { Component } from '@angular/core';
-//import request = require('request');
-//import { request } from 'request';
 
 
 @Component({
