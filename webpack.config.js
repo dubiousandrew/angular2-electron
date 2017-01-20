@@ -23,7 +23,7 @@ var config = {
     entry: {
         'polyfills': './src/polyfills.ts',
         'vendor': './src/vendor.ts',
-        'app': './src/app/app',
+        'app': './src/app/main.ts',
     },
 
     // Config for our build files
@@ -77,7 +77,7 @@ var config = {
 
             // support for .html antd .css as raw text
             {
-                test: /\.html$/,
+                test: /\.(html|css)$/,
                 loader: 'raw-loader',
                 exclude: [helpers.root('app/index.html')]
             },
