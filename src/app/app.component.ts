@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+var request  = require('request');
 
 @Component({
     //moduleId: module.id,
@@ -21,17 +21,17 @@ export class AppComponent {
     doSomething() {
         console.log('something');
 
-        // request({ baseUrl: this.url, uri: '/patients', json: true }, (error, response, body) => {
-        //     if (!error && response.statusCode == 200) {
-        //         console.log(body)
-        //         //display each patient
-        //         body.forEach(element => {
-        //             this.getPt(element);
-        //         });
-        //     } else {
-        //         console.log(error);
-        //     }
-        // });
+        request({ baseUrl: this.url, uri: '/patients', json: true }, (error, response, body) => {
+            if (!error && response.statusCode == 200) {
+                console.log(body)
+                //display each patient
+                body.forEach(element => {
+                    this.getPt(element);
+                });
+            } else {
+                console.log(error);
+            }
+        });
     }
 
 
