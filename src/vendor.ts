@@ -16,3 +16,6 @@ import 'rxjs/add/operator/mergeMap';
 
 // Hammer
 import 'hammerjs';
+
+//huh?
+import 'request';

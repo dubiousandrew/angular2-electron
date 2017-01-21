@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-var request  = require('request');
+import * as request from 'request';
+
 
 @Component({
     //moduleId: module.id,
@@ -20,7 +21,6 @@ export class AppComponent {
     url = 'http://localhost:8042/';
     doSomething() {
         console.log('something');
-
         request({ baseUrl: this.url, uri: '/patients', json: true }, (error, response, body) => {
             if (!error && response.statusCode == 200) {
                 console.log(body)
