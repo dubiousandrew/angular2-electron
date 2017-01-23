@@ -1,7 +1,7 @@
 {
   "name": "angular2-electron",
   "version": "0.0.0",
-  "description": "Angular 2 with Electron and Webpack",
+  "description": "Angular 2 with Electron and Webpack Hero demo",
   "main": "",
   "scripts": {
     "watch": "npm run watch:dev",
