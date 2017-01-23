@@ -3,9 +3,12 @@
  */
 const {app, BrowserWindow } = require('electron');
 
+const path = require('path');
 // For development - automatic reload on changes
 //comment out this line before packaging
-require('electron-reload')(__dirname);
+require('electron-reload')(__dirname, {
+  electron: path.join(__dirname, '../../', 'node_modules', '.bin', 'electron')
+});
 
 // browser-window creates a native window
 let mainWindow = null;
