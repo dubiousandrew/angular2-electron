@@ -20,7 +20,7 @@ export class AppComponent {
     title = 'Tour of Heroes';
     url = 'http://localhost:8042/';
     doSomething() {
-        console.log('something');
+        console.log('something else');
         request({ baseUrl: this.url, uri: '/patients', json: true }, (error, response, body) => {
             if (!error && response.statusCode == 200) {
                 console.log(body)

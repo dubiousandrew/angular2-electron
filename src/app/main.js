@@ -3,6 +3,9 @@
  */
 const {app, BrowserWindow } = require('electron');
 
+// For development - automatic reload on changes
+require('electron-reload')(__dirname);
+
 // browser-window creates a native window
 let mainWindow = null;
 
