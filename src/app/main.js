@@ -4,6 +4,7 @@
 const {app, BrowserWindow } = require('electron');
 
 // For development - automatic reload on changes
+//comment out this line before packaging
 require('electron-reload')(__dirname);
 
 // browser-window creates a native window
